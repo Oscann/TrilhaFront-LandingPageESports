@@ -1,0 +1,79 @@
+* {
+    line-height: 1.5;
+
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #e0eee7;
+}
+
+header {
+    background-color: #67c387;
+
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0px;
+}
+
+header h1 {
+    color: #fff;
+
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section.landing-page {
+    color: #235645;
+    font-family: Verdana;
+
+    padding: 24px 48px 24px 48px;
+
+    border-bottom: 5px solid #67c387;
+
+    justify-content: space-between;
+}
+
+div.coroa-de-louros {
+    background-image: url("/assets/laurel-wreath.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    width: 30%;
+    padding-bottom: 30%;
+}
+
+div.welcome {
+    max-width: 50%;
+}
+
+div.welcome h1 {
+
+    font-weight: 800;
+
+    font-size: 40px;
+}
+
+div.welcome h2 {
+    font-size: 28px;
+
+    color: hsl(160, 20%, 24%)
+}
+
+section.sign-up-form {
+    background-color: white;
+
+    padding: 24px;
+}
