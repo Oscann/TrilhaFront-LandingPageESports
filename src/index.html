@@ -15,7 +15,7 @@
         <section class="landing-page">
             <div class="welcome">
                 <h1>
-                    First Edition of E-Olympics is FINALLY HAPPENING
+                    First Edition of the E-Olympics is FINALLY HAPPENING
                 </h1>
                 <h2>
                     Opening ceremony: 12/31/2022 - 15:00 GMT
@@ -23,11 +23,116 @@
             </div>
             <div class="coroa-de-louros"></div>
         </section>
+        <hr>
+        <section class="intro">
+            <ul>
+                <li>
+                    <h3 class="question">
+                        What is the E-Olympics?
+                    </h3>
+                    <p class="answer">
+                        The E-Olympics is an international E-Sports championship. People from all over the 
+                        world play their favorite games, representing their homeland, in the hope of reaching
+                        the first place.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        Who can participate?
+                    </h3>
+                    <p class="answer">
+                        Anyone! As long as you are subscribed, you will be called to every event related to the
+                        game you chose.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        What about the teams?
+                    </h3>
+                    <p class="answer">
+                        The teams will be arranged by the staff based on the nationality. The teams, though, won't
+                        be static: people will be eliminated from the event accordingly to their performance and 
+                        the teams will be rearranged. This creates the possibility of meeting new cool people!
+                    </p>
+                </li>
+                <li>
+                    <h3 class="question">
+                        How do I subscribe?
+                    </h3>
+                    <p class="answer">
+                        Just scroll down or <a href="#subscribe-form">Click here</a> :)
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <hr>
         <section class="sign-up-form">
-            <form action="#" class="sign-up">
+            <h1>
+                SUBSCRIBE
+            </h1>
+            <form id="subscribe-form" class="sign-up">
+                <div>
+                    <label for="name">
+                        Name
+                    </label>
+                    <input name="name" id="name" type="text" placeholder="type your name" required/>
+                </div>
                 
+                <div>
+                    <label for="email">
+                        E-Mail
+                    </label>
+                    <input name="email" id="email" type="email" placeholder="example@example.com" required/>
+                </div>
+
+                <div>
+                    <label for="game">
+                        Game
+                    </label>
+                    <select id="game" required>
+                        <option>
+                            CS: GO
+                        </option>
+                        <option>
+                            League of Legends
+                        </option>
+                        <option>
+                            Hearthstone
+                        </option>
+                        <option>
+                            Overwatch 2
+                        </option>
+                        <option>
+                            Warcraft 3
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="username">
+                        Username
+                    </label>
+                    <input name="username" id="username" type="text" placeholder="type your username" required/>
+                </div>
+
+                <div>
+                    <label for="password">
+                        Password
+                    </label>
+                    <input name="password" id="password" type="password" placeholder="8-20 characters" minlength="8" maxlength="20" required/>
+                </div>
+                <button type="submit">Subscribe</button>
+                <div id="response">
+                    <div id="output">
+                        Loading...
+                    </div>
+                </div>
             </form>
         </section>
     </main>
+    <footer>
+        e.olympics@fic.email.com
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

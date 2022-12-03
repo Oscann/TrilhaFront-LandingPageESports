@@ -7,43 +7,42 @@
 body {
     margin: 0px;
     padding: 0px;
-
-    background-color: #e0eee7;
 }
 
-header {
+header, footer {
     background-color: #67c387;
 
     padding: 32px;
 
     display: flex;
     align-items: center;
-}
 
-h1 {
-    margin: 0px;
-}
+    
 
-header h1 {
     color: #fff;
 
     font-weight: 700;
 }
 
+h1 {
+    margin: 0px;
+    font-size: 40px;
+}
+
 section {
+    background-color: #fff;
+    
+    color: #235645;
+
     display: flex;
     align-items: center;
 }
 
-section.landing-page {
-    color: #235645;
-    font-family: Verdana;
+hr {
+    height: 0;
+    margin: 0;
 
-    padding: 24px 48px 24px 48px;
-
-    border-bottom: 5px solid #67c387;
-
-    justify-content: space-between;
+    border: 2.5px solid #67c387;
 }
 
 div.coroa-de-louros {
@@ -55,15 +54,22 @@ div.coroa-de-louros {
     padding-bottom: 30%;
 }
 
+section.landing-page {
+    background-color: #e0eee7;
+    font-family: Verdana;
+
+    padding: 24px 48px 24px 48px;
+
+    justify-content: space-between;
+}
+
 div.welcome {
     max-width: 50%;
 }
 
 div.welcome h1 {
-
     font-weight: 800;
 
-    font-size: 40px;
 }
 
 div.welcome h2 {
@@ -72,8 +78,172 @@ div.welcome h2 {
     color: hsl(160, 20%, 24%)
 }
 
-section.sign-up-form {
-    background-color: white;
+section.intro {
+    padding: 64px 32px;
+}
 
+section.intro li {
+    list-style: none;
+    border-bottom: 2px solid #67c387;
+
+    padding: 20px 0px;
+}
+
+h3.question {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin: 10px 0px;
+}
+
+p.answer {
+    font-size: 24px;
+}
+
+p.answer a {
+    color: #67c387;
+}
+
+section.sign-up-form {
     padding: 24px;
+    flex-direction: column;
+}
+
+section.sign-up-form h1 {
+    margin-bottom: 24px;
+}
+
+form.sign-up {
+    position: relative;
+
+    border: 1px solid #67c387;
+    border-radius: 8px;
+
+    padding: 12px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    overflow: hidden;
+}
+
+form.sign-up div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form.sign-up input, form.sign-up select{
+    background-color: inherit;
+
+    width: 450px;
+    padding: 16px;
+
+    border-radius: 16px;
+    border: 1px solid #67c387;
+
+    font-size: 20px;
+
+    outline: none;
+
+    color: #235645;
+}
+
+form.sign-up input:focus, form.sign-up select:focus {
+    border-color: hsl(141, 100%, 58%);
+}
+
+form.sign-up label {
+
+    font-size: 24px;
+
+    margin: 10px 0px;
+
+    user-select: none;
+}
+
+form.sign-up button {
+    background-color: hsl(141, 53%, 58%);
+    color: #fff;
+
+    padding: 16px;
+
+    border: 0px;
+    border-radius: 8px;
+
+    margin-top: 10px;
+}
+
+form.sign-up button:hover {
+    background-color: hsl(141, 43%, 48%);
+}
+
+form.sign-up button:active {
+    background-color: hsl(141, 43%, 28%);
+}
+
+#response {
+    font-size: 30px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #fff;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+div.check {
+    background-image: url("/assets/checked.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    width: 40%;
+    padding-bottom: 40%;
+
+    margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    div.welcome h2 {
+        font-size: 20px;
+    }
+
+    h3.question {
+        font-size: 24px;
+    }
+    
+    p.answer {
+        font-size: 16px;
+    }
+
+    section.intro {
+        padding: 32px 32px 64px 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.coroa-de-louros {
+        display: none;
+    }
+
+    div.welcome {
+        max-width: 100%;
+    }
+
+    form.sign-up input, form.sign-up select{
+        width: 300px;
+    }
 }
