@@ -63,16 +63,16 @@ section.landing-page {
     justify-content: space-between;
 }
 
-div.welcome {
+div.announcement {
     max-width: 50%;
 }
 
-div.welcome h1 {
+div.announcement h1 {
     font-weight: 800;
 
 }
 
-div.welcome h2 {
+div.announcement h2 {
     font-size: 28px;
 
     color: hsl(160, 20%, 24%)
@@ -166,6 +166,7 @@ form.sign-up label {
 form.sign-up button {
     background-color: hsl(141, 53%, 58%);
     color: #fff;
+    font-size: 20px;
 
     padding: 16px;
 
@@ -217,7 +218,7 @@ div.check {
         font-size: 32px;
     }
     
-    div.welcome h2 {
+    div.announcement h2 {
         font-size: 20px;
     }
 
@@ -239,7 +240,7 @@ div.check {
         display: none;
     }
 
-    div.welcome {
+    div.announcement {
         max-width: 100%;
     }
 
